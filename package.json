@@ -1,0 +1,29 @@
+{
+    "name": "shiki-canvas",
+    "version": "1.0.0",
+    "description": "Shiki in the canvas",
+    "license": "MIT",
+    "keywords": [
+        "shiki",
+        "canvas",
+        "hightlight"
+    ],
+    "main": "dist/index.cjs",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w"
+    },
+    "dependencies": {
+        "shiki": "^1.2.4"
+    },
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^11.1.6",
+        "tslib": "^2.6.2",
+        "typescript": "^5.4.4"
+    }
+}
