@@ -22,15 +22,14 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "release-major": "npx changelogen@latest --release --major",
-    "release-minor": "npx changelogen@latest --release --minor",
-    "release-patch": "npx changelogen@latest --release --patch"
+    "release": "bumpp && npm publish"
   },
   "dependencies": {
     "shiki": "^1.2.4"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.6",
+    "bumpp": "^9.4.0",
     "rollup": "^4.14.1",
     "tslib": "^2.6.2",
     "typescript": "^5.4.4"
