@@ -3,10 +3,14 @@
 
 name: Node.js Package
 
+permissions:
+  contents: write
+
 on:
   push:
     tags:
       - 'v*'
+
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
