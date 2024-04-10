@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "dev": "rollup -c -w & cd example && yarn dev",
     "release": "bumpp && npm publish"
   },
   "dependencies": {
